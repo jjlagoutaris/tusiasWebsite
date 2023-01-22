@@ -16,13 +16,29 @@ const Navbar = () => {
       </div>
       <ul className="app__navbar-links">
         {
-          // maps each string to an li element containing a div and an 'a' tag
+          // maps each string to an li element containing a div and a Link
           ["home", "about", "blog", "services", "contact"].map(
             (item) => (
-              <li className="app__flex p-text" key={`link-${item}`}>
-                <div />
-                <Link to={`/${item}`}>{item}</Link>
-              </li>
+              // ternary
+              (
+                // if item equals home
+                (item === "home") ? 
+                // then
+                <li className="app__flex p-text" key={`link-${item}`}>
+                  <div />
+                  <Link to={`/`}>
+                    {item}
+                  </Link>
+                </li> 
+                // else
+                :
+                <li className="app__flex p-text" key={`link-${item}`}>
+                  <div />
+                  <Link to={`/${item}`}>
+                    {item}
+                  </Link>
+                </li> 
+              )
             )
           )
         }
@@ -44,12 +60,25 @@ const Navbar = () => {
                 "blog",
                 "services",
                 "contact",
-              ].map((item) => (
-                <li key={item}>
-                  <Link to={`/${item}`} onClick={() => setToggle(false)}>
-                    {item}
-                  </Link>
-                </li>
+              ].map((item) => ( 
+                // ternary
+                (
+                  // if item equals home
+                  (item === "home") ? 
+                  // then
+                  <li key={item}>
+                    <Link to={`/`} onClick={() => setToggle(false)}>
+                      {item}
+                    </Link>
+                  </li> 
+                  // else
+                  :
+                  <li key={item}>
+                    <Link to={`/${item}`} onClick={() => setToggle(false)}>
+                      {item}
+                    </Link>
+                  </li> 
+                )
               ))}
             </ul>
           </motion.div>
