@@ -5,6 +5,7 @@ import {Route, Routes} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.scss';
 import { NavbarComponent } from './components';
+import { Footer } from './containers';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/About" element={<About />} />
         <Route path="/NotFound" element={<NotFound />} />
       </Routes>
+      <Footer />
     </>
   );
 }
