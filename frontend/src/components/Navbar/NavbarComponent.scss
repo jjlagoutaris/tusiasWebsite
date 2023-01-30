@@ -1,0 +1,60 @@
+// .app__navbar{
+
+//   width: 100%;
+
+
+
+//   padding: 1rem 2rem;
+//   background: rgba(255, 255, 255, 0.5);
+//   backdrop-filter: blur(4px);
+//   -webkit-backdrop-filter: blur(4px);
+//   border: 1px solid rgba(255, 255, 255, 0.18);
+//   position: fixed;
+//   z-index: 2;
+// }
+
+.app__navbar-socials{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+
+  Button{
+    border-radius: 50%;
+    &:hover{
+      background-color: gainsboro;
+    }
+  }
+}
+
+div > a{
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: black;
+}
+
+.app__navbar-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 240px;
+    height: 80px;
+
+    @media screen and (min-width: 2000px) {
+      width: 400px;
+      height: 200px;
+    }
+
+    @media screen and (max-width: 600px){
+      width: 120px;
+      height: 40px;
+    }
+
+    @media screen and (max-width: 400px){
+      width: 60px;
+      height: 20px;
+    }
+  }
+}

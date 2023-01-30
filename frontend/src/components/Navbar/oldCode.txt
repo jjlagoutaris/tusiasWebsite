@@ -1,0 +1,127 @@
+  // const [toggle, setToggle] = useState(false);
+
+  // return (
+
+  //   <Container fluid>
+  //     <Navbar className="app__navbar" fixed="top">
+
+  //       <Col>
+  //         <div className="app__navbar-logo">
+  //             <img src={images.logo} alt="logo" className="app__navbar-logo-image" />
+  //         </div>
+  //       </Col>
+
+  //       <Col>
+  //         <Nav>
+  //           {
+  //             // maps each string to an li element containing a div and a Link
+  //             ["home", "about", "blog", "services", "contact"].map(
+  //               (item) => (
+  //                 // ternary
+  //                 (
+  //                   // if item equals home
+  //                   (item === "home") ? 
+  //                   // then
+  //                   <Nav.Item className="app__flex p-text">
+  //                     <div />
+  //                     <Link to={`/`}>{item}</Link>
+  //                   </Nav.Item> 
+  //                   // else
+  //                   :
+  //                   <Nav.Item className="app__flex p-text">
+  //                     <div />
+  //                     <Link to={`/${item}`}>
+  //                       {item}
+  //                     </Link>
+  //                   </Nav.Item> 
+  //                 )
+  //               )
+  //             )
+  //           }
+  //         </Nav>
+  //       </Col>
+
+  //       {/* <Col>
+  //         <div className="app__navbar-logo">
+  //           <Image src={images.logo} alt="logo" className="app__navbar-logo-image" />
+  //         </div>
+  //       </Col> */}
+
+  //       {/* <Col>
+  //         <ul className="app__navbar-links">
+  //           {
+  //             // maps each string to an li element containing a div and a Link
+  //             ["home", "about", "blog", "services", "contact"].map(
+  //               (item) => (
+  //                 // ternary
+  //                 (
+  //                   // if item equals home
+  //                   (item === "home") ? 
+  //                   // then
+  //                   <li className="app__flex p-text" key={`link-${item}`}>
+  //                     <div />
+  //                     <Link to={`/`}>{item}</Link>
+  //                   </li> 
+  //                   // else
+  //                   :
+  //                   <li className="app__flex p-text" key={`link-${item}`}>
+  //                     <div />
+  //                     <Link to={`/${item}`}>
+  //                       {item}
+  //                     </Link>
+  //                   </li> 
+  //                 )
+  //               )
+  //             )
+  //           }
+  //         </ul>     
+  //       </Col> */}
+
+
+  //       <Col>
+  //         <div className="app__navbar-menu">
+  //           <HiMenuAlt4 onClick={() => setToggle(true)} />
+
+  //           {toggle && (
+  //             <motion.div
+  //               whileInView={{ x: [300, 0] }}
+  //               transition={{ duration: 0.85, ease: "easeOut" }}
+  //             >
+  //               <HiX onClick={() => setToggle(false)} />
+  //               <ul>
+  //                 {[
+  //                   "home",
+  //                   "about",
+  //                   "blog",
+  //                   "services",
+  //                   "contact",
+  //                 ].map((item) => ( 
+  //                   // ternary
+  //                   (
+  //                     // if item equals home
+  //                     (item === "home") ? 
+  //                     // then
+  //                     <li key={item}>
+  //                       <Link to={`/`} onClick={() => setToggle(false)}>
+  //                         {item}
+  //                       </Link>
+  //                     </li> 
+  //                     // else
+  //                     :
+  //                     <li key={item}>
+  //                       <Link to={`/${item}`} onClick={() => setToggle(false)}>
+  //                         {item}
+  //                       </Link>
+  //                     </li> 
+  //                   )
+  //                 ))}
+  //               </ul>
+  //             </motion.div>
+  //           )}
+  //         </div>   
+  //       </Col>
+
+  //     </Navbar>             
+  //   </Container>
+
+  // );

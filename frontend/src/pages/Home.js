@@ -1,8 +1,80 @@
-import React from 'react'
+import React from 'react';
 
 const Home = () => {
   return (
     <>
+      <div>Hi 1</div>
+      <div>Hiz</div>
+      <div>Hi</div>
+      <div>Hiz</div>
+      <div>Hi</div>
+      <div>Hiz</div>
+      <div>Hi</div>
+      <div>Hiz</div>
+      <div>Hi</div>
+      <div>Hiz</div>
+      <div>Hi</div>
+      <div>Hiz</div>
+      <div>Hi</div>
+      <div>Hiz</div>
+      <div>Hi</div>
+      <div>Hiz</div>
+      <div>Hi</div>
+      <div>Hiz</div>
+      <div>Hi</div>
+      <div>Hiz</div>
+      <div>Hi</div>
+      <div>Hiz</div>
+      <div>Hi</div>
+      <div>Hiz</div>
+      <div>Hi</div>
+      <div>Hiz</div>
+      <div>Hi</div>
+      <div>Hiz</div>
+      <div>Hi</div>
+      <div>Hiz</div>
+      <div>Hi</div>
+      <div>Hiz</div>
+      <div>Hi</div>
+      <div>Hiz</div>
+      <div>Hi</div>
+      <div>Hiz</div>
+      <div>Hi</div>
+      <div>Hiz</div>
+      <div>Hi</div>
+      <div>Hiz</div>
+      <div>Hi</div>
+      <div>Hiz</div>
+      <div>Hi</div>
+      <div>Hiz</div>
+      <div>Hi</div>
+      <div>Hiz</div>
+      <div>Hi</div>
+      <div>Hiz</div>
+      <div>Hi</div>
+      <div>Hiz</div>
+      <div>Hi</div>
+      <div>Hiz</div>
+      <div>Hi</div>
+      <div>Hiz</div>
+      <div>Hi</div>
+      <div>Hiz</div>
+      <div>Hi</div>
+      <div>Hiz</div>
+      <div>Hi</div>
+      <div>Hiz</div>
+      <div>Hi</div>
+      <div>Hiz</div>
+      <div>Hi</div>
+      <div>Hiz</div>
+      <div>Hi</div>
+      <div>Hiz</div>
+      <div>Hi</div>
+      <div>Hiz</div>
+      <div>Hi</div>
+      <div>Hiz</div>
+      <div>Hi</div>
+      <div>Hiz</div>
     </>
   )
 }
