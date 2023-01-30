@@ -46,6 +46,7 @@
     "framer-motion": "^8.5.0",
     "gh-pages": "^5.0.0",
     "react-icons": "^4.7.1",
+    "reactstrap": "^9.1.5",
     "sass": "^1.57.1"
   }
 }
