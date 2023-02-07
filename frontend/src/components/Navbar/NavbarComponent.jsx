@@ -12,7 +12,7 @@ const NavbarComponent = () => {
 
   return(
   <>
-    <Navbar key="lg" bg="warning" expand="lg" className="mb-3">
+    <Navbar key="lg" bg="warning" expand="lg" className="app__navbar-bg" sticky="top">
       <Container fluid>
         
 
@@ -49,7 +49,7 @@ const NavbarComponent = () => {
             placement="end"
           >
             <Offcanvas.Header closeButton>
-              <Offcanvas.Title id={`offcanvasNavbarLabel-expand`}>
+              <Offcanvas.Title id={`offcanvasNavbarLabel-expand-lg`}>
                 Moments
               </Offcanvas.Title>
             </Offcanvas.Header>

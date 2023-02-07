@@ -10,16 +10,18 @@ import { Footer } from './containers';
 function App() {
   return (
     <>
-      <NavbarComponent />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Blog" element={<Blog />} />
-        <Route path="/Contact" element={<Contact />} />
-        <Route path="/Services" element={<Services />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/NotFound" element={<NotFound />} />
-      </Routes>
-      <Footer />
+      <div className="app__background">
+        <NavbarComponent />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Blog" element={<Blog />} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="/Services" element={<Services />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/NotFound" element={<NotFound />} />
+        </Routes>
+        <Footer />
+      </div>
     </>
   );
 }

@@ -1,13 +1,17 @@
 .app__footer{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   flex-direction: column;
   background-color: black;
   color: white;
-  padding: 10px;
+  font-size: 1rem;
+  line-height: .4rem;
+  > :nth-child(1){
+    padding-top: 15px;
+  }
 }
 
-span > a{
+.app__footer-name{
   text-decoration: none;
+  color: pink;
 }

@@ -1,0 +1,40 @@
+.app__header-container{
+  padding-top: 50px;
+  padding-bottom: 100px;
+  background-color: white;
+  background-image: url('../../assets/cover.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--dark-color);
+  .app__header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .app__header-hej{
+      color: var(--bright-color);
+      font-size: 2.2rem;
+    }
+    .app__header-main-text{
+      text-align: center;
+      font-size: 2rem;
+      width: 30%;
+    }
+    .app__header-name{
+      color: var(--primary-color);
+    }
+  }
+  img{
+    aspect-ratio: auto;
+    width: 800px;
+    padding: 10px;
+  }
+  button{
+    background-color: white;
+    a{
+      background-color: white;
+      text-decoration: none;
+    }
+  }
+}
