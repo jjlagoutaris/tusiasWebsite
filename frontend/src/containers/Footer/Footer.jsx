@@ -5,15 +5,14 @@ import { Navbar } from 'react-bootstrap';
 const Footer = () => {
   return (
     <>
-      <Navbar fixed="bottom"  className="app__footer" fluid>
+      <Navbar className="app__footer">
         <p className="app__footer-top">
-          @Copyright Marta Leszczyńska. All Rights Reserved.
+        © Copyright Marta Leszczyńska. All Rights Reserved.
         </p>
         <p className="app__footer-bottom">
-          Website by <span className='app__footer-name'><a href="https://github.com/jjlagoutaris" target="_blank" rel="noreferrer">John Lagoutaris</a></span>
+          Website by <a href="https://jjlagoutaris.github.io/myWebsite/" target="_blank" rel="noreferrer" className='app__footer-name'>John Lagoutaris</a>
         </p>
       </Navbar>
-
     </>
   )
 }
