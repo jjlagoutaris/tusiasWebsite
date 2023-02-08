@@ -16,6 +16,24 @@
 .app__navbar-bg{
   padding: 0px;
   margin: 0px;
+  @media screen and (max-width: 600px){
+    padding: 20px;
+    img{
+      visibility: hidden;
+      background-color: pink;
+    }
+    .app__navbar-socials{
+      visibility: hidden;
+      position: relative;
+      &:after{
+        position: absolute;
+        visibility: visible;
+        content: 'Moments';
+        font-size: 3rem;
+        color: black;
+      }
+    }
+  }
 }
 
 .app__navbar-socials{
@@ -63,4 +81,8 @@ div > a{
       height: 20px;
     }
   }
+}
+
+.navbar-right{
+  float: right;
 }

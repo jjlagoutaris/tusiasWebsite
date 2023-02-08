@@ -19,7 +19,7 @@ const Header = () => {
       </div>
 
       <div className="app__header-marta app__flexCenter">
-        <img src={images.hero} alt="Marta Leszczyńska" className="app__header-marta-img" />
+        <img src={images.hero} alt="Marta Leszczyńska" className="app__header-marta-img" height="200px" width="200px"/>
         <h3 className="app__header-marta-about-me-header">
           Who am I?
         </h3>
