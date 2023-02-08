@@ -76,16 +76,23 @@
 }
 
 .app__header-marta{
+  margin-top: 200px;
   width: 50%;
   border-radius: 20px;
   padding: 20px;
+  padding-top: 150px;
   background-color: var(--lightblue);
   flex-direction: column;
+  gap: 20px;
+  position: relative;
   img{
-    height: 400px;
-    width: 400px;
-    border-radius: 50%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 40%;
+    position: absolute;
     left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
   }
   h3, p{
     width: 60%;
@@ -98,6 +105,19 @@
   p{
     font-size: 20px;
     line-height: 1.5rem;
+  }
+  @media screen and (max-width: 768px){
+    p{
+      font-size: 16px;
+    }
+    width: 70%;
+  }
+
+  @media screen and (max-width: 600px){
+    width: 80%;
+    p{
+      font-size: 14px;
+    }
   }
 }
 

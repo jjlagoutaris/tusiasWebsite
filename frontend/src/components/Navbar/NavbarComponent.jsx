@@ -42,7 +42,7 @@ const NavbarComponent = () => {
 
 
         <Col >
-          <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-lg`} />
+          <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-lg`} className='navbar-right'/>
           <Navbar.Offcanvas
             id={`offcanvasNavbar-expand-lg`}
             aria-labelledby={`offcanvasNavbarLabel-expand-lg`}
