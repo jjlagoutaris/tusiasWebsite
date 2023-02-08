@@ -1,5 +1,5 @@
 import logo from '../assets/logo.png'
-import hero from '../assets/MartaHeroShot.png'
+import hero from '../assets/MartaHeroShot1.jpg'
 import bg from '../assets/cover.jpg'
 
 // eslint-disable-next-line

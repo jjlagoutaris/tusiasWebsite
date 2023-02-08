@@ -5,15 +5,19 @@
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --text: 16px/1.85 Merriweather,Georgia,serif;
   
   --primary-color: #ffc107;
   --bright-color: magenta;
   --dark-color: black;
+  --lightpink: #F0E8E7;
+  --darkpink: #D8C4C3;
+  --lightblue: #C0E2E2;
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  scroll-behavior: smooth;
 }

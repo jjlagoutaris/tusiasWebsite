@@ -12,21 +12,21 @@ const NavbarComponent = () => {
 
   return(
   <>
-    <Navbar key="lg" bg="warning" expand="lg" className="app__navbar-bg" sticky="top">
+    <Navbar key="lg" bg="light" expand="lg" className="app__navbar-bg" sticky="top">
       <Container fluid>
         
 
       <Col className="app__navbar-socials">
-          <Button variant="light">
-            <a href="https://github.com/jjlagoutaris" target="_blank" rel="noreferrer"><FaLinkedin /></a>
-          </Button>
-          <Button variant="light">
-            <a href="https://github.com/jjlagoutaris" target="_blank" rel="noreferrer"><FaInstagram /></a>
-          </Button>
-          <Button variant="light">
-            <a href="https://github.com/jjlagoutaris" target="_blank" rel="noreferrer"><FaDiscord /></a>
-          </Button>
-        </Col>
+        <Button variant="light">
+          <a href="https://github.com/jjlagoutaris" target="_blank" rel="noreferrer"><FaLinkedin /></a>
+        </Button>
+        <Button variant="light">
+          <a href="https://github.com/jjlagoutaris" target="_blank" rel="noreferrer"><FaInstagram /></a>
+        </Button>
+        <Button variant="light">
+          <a href="https://github.com/jjlagoutaris" target="_blank" rel="noreferrer"><FaDiscord /></a>
+        </Button>
+      </Col>
 
         <Col>
           <Navbar.Brand href="/" className="app__navbar-logo">
@@ -55,7 +55,7 @@ const NavbarComponent = () => {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3" >
-                <Stack gap="2" direction="horizontal">
+                <Stack gap="3" direction="horizontal">
                   <Link to={'/'}>Home</Link>
                   <Link to={'/About'}>About</Link>
                   <Link to={'/Blog'}>Blog</Link>
