@@ -51,8 +51,8 @@
 .app__header-container{
   flex-direction: column;
   background-color: white;
-  gap: 50px;
   padding: 20px;
+  gap: 20px;
 }
 
 .app__header-moments-container{
@@ -60,6 +60,7 @@
   gap: 10px;
   width: 40%;
   line-height: 1.5rem;
+  margin-top: 50px;
   .app__header-moments-headline, 
   .app__header-moments-info{
     text-align: center;
@@ -72,6 +73,12 @@
     font-style: italic;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 20px;
+  }
+  @media screen and (max-width: 768px) {
+    width: 60%;
+  }
+  @media screen and (max-width: 600px) {
+    width: 80%;
   }
 }
 
@@ -122,5 +129,13 @@
 }
 
 .app__header-button{
-
+  a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    &:hover{
+      color: black;
+    }
+  }
+  
 }

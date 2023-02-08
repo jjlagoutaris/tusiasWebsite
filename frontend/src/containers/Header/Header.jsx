@@ -28,7 +28,7 @@ const Header = () => {
         </p>
       </div>
 
-      <Button variant="primary" size="lg" className='app__header-button app__flexCenter'>
+      <Button variant="outline-info" size="lg" className='app__header-button app__flexCenter'>
         <Link to="/Contact">Hire me</Link>
       </Button>
 
