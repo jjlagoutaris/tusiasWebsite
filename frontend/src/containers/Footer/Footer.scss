@@ -5,9 +5,12 @@
   background-color: black;
   color: white;
   font-size: 1rem;
-  line-height: .4rem;
+  line-height: .8rem;
   > :nth-child(1){
     padding-top: 15px;
+  }
+  @media screen and (max-width: 768px) {
+    line-height: 1rem;
   }
 }
 
