@@ -1,38 +1,54 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 import './Header.scss';
 
-import { Button, Container } from 'react-bootstrap'
-import { images } from '../../constants';
+import { Button, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
+import { urlFor, client } from "../../client";
+
 const Header = () => {
+  const [things, setThings] = useState([]);
+
+  useEffect(() => {
+    const query = '*[_type=="homeInfo"]';
+
+    client.fetch(query).then((info) => setThings(info));
+  }, []);
+
   return (
-    <Container className="app__header-container app__flexCenter" fluid>
+    <>
+      {things.map((thing, index) => (
+        <Container className="app__header-container app__flexCenter" fluid key={index}>
 
-      <div className="app__header-moments-container app__flexCenter">
-        <h2 className="app__header-moments-headline">
-          What is <span className='app__header-moments-headline-title'>Moments</span>?
-        </h2>
-        <p className="app__header-moments-info">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus quia dolorem, ex, suscipit labore esse nemo explicabo pariatur molestiae quos nam harum numquam doloribus? Quisquam corrupti molestias impedit consectetur pariatur incidunt ut eum officiis reiciendis? Saepe blanditiis cumque, ratione officia veniam nemo! Officia eos fuga animi ut ducimus. Possimus, atque.
-        </p>
-      </div>
+          <div className="app__header-moments-container app__flexCenter">
+            <h2 className="app__header-moments-headline">
+              {thing.header}
+            </h2>
+            <p className="app__header-moments-info">
+              {thing.headerDescription}
+            </p>
+          </div>
+          
+          <div className="app__header-marta app__flexCenter">
+            <img src={urlFor(thing.image)} alt="Marta Leszczyńska" className="app__header-marta-img" />
+            <h3 className="app__header-marta-about-me-header">
+              {thing.aboutMeHeader}
+            </h3>
+            <p className="app__header-marta-about-me">
+              {thing.aboutMeDesc}
+            </p>
+          </div>
+          
+          <Link to="/Contact">
+            <Button variant="info" size="lg" className='app__header-button'>
+              {thing.button}
+            </Button>
+          </Link>
 
-      <div className="app__header-marta app__flexCenter">
-        <img src={images.hero} alt="Marta Leszczyńska" className="app__header-marta-img" height="200px" width="200px"/>
-        <h3 className="app__header-marta-about-me-header">
-          Who am I?
-        </h3>
-        <p className="app__header-marta-about-me">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi laborum quibusdam modi distinctio soluta voluptatem, eligendi eos nulla voluptate cumque quo asperiores dolor accusantium, ipsam minus eum omnis quidem fugiat fuga exercitationem placeat necessitatibus eveniet sapiente nisi. Minima ut culpa, ea doloribus odit ducimus accusantium alias, dolor eum, iusto quod!
-        </p>
-      </div>
-
-      <Button variant="outline-info" size="lg" className='app__header-button app__flexCenter'>
-        <Link to="/Contact">Hire me</Link>
-      </Button>
-
-    </Container>
+        </Container>
+      ))}
+    </>
+    
   )
 }
 
