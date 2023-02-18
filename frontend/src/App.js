@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {About, Blog, Contact, Home, Services, NotFound} from './pages';
+import {AboutPage, BlogPage, ContactPage, Home, ServicesPage, NotFound} from './pages';
 import {Route, Routes} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.scss';
@@ -14,10 +14,10 @@ function App() {
         <NavbarComponent />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Blog" element={<Blog />} />
-          <Route path="/Contact" element={<Contact />} />
-          <Route path="/Services" element={<Services />} />
-          <Route path="/About" element={<About />} />
+          <Route path="/BlogPage" element={<BlogPage />} />
+          <Route path="/ContactPage" element={<ContactPage />} />
+          <Route path="/ServicesPage" element={<ServicesPage />} />
+          <Route path="/AboutPage" element={<AboutPage />} />
           <Route path="/NotFound" element={<NotFound />} />
         </Routes>
         <Footer />
