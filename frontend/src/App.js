@@ -10,14 +10,14 @@ import { Footer } from './containers';
 function App() {
   return (
     <>
-      <div className="app__background">
+      <div className="app__background app__navbarCenter">
         <NavbarComponent />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/BlogPage" element={<BlogPage />} />
-          <Route path="/ContactPage" element={<ContactPage />} />
-          <Route path="/ServicesPage" element={<ServicesPage />} />
-          <Route path="/AboutPage" element={<AboutPage />} />
+          <Route path="/Blog" element={<BlogPage />} />
+          <Route path="/Contact" element={<ContactPage />} />
+          <Route path="/Services" element={<ServicesPage />} />
+          <Route path="/About" element={<AboutPage />} />
           <Route path="/NotFound" element={<NotFound />} />
         </Routes>
         <Footer />
