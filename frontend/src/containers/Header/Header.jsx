@@ -4,7 +4,7 @@ import "./Header.scss";
 import { Button, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-import { urlFor, client } from "../../client";
+import { client } from "../../client";
 
 import { images } from "../../constants";
 

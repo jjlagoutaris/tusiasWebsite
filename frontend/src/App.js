@@ -10,7 +10,7 @@ import { Footer } from './containers';
 function App() {
   return (
     <>
-      <div className="app__background app__navbarCenter">
+      <div className="app__flexColumn">
         <NavbarComponent />
         <Routes>
           <Route path="/tusiasWebsite/" element={<Home />} />
