@@ -33,7 +33,7 @@ const Header = () => {
               </p>
             </div>
 
-            <div className="right">
+            <div className="right app__flexCenter">
               <img
                 src={images.momentsColor}
                 alt="moments-logo"
