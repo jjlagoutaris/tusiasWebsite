@@ -1,35 +1,40 @@
 #app__about-container{
-  width: var(--container-width);
+  max-width: var(--container-width);
 }
 .app__about-container{
   flex-direction: column;
-  width: var(--container-width);
   max-width: var(--container-width);
   min-height: 90vh;
-  gap: 30px;
-  padding: 100px;
+  gap: 10px;
+  padding: 50px;
+
   .top{
     width: 100%;
-    justify-self: flex-start;
-    font-size: 3rem;
-    text-decoration: underline;
-    text-decoration-color: var(--yellow);
-    text-decoration-thickness: 1rem;
+    h1{
+      font-size: 3rem;
+      text-decoration: underline;
+      text-decoration-color: var(--yellow);
+      text-decoration-thickness: 1rem;
+      font-weight: bold;
+      text-align: left;
+      @media screen and (max-width: 992px) {
+        text-align: center;
+      }
+    }
   }
+
   .bottom{
     width: 100%;
     gap: 50px;
     .app__about-picture{
       align-self: flex-start;
       width: 40%;
-      border-radius: 10px;
+      // border-radius: 10px;
 
       @media screen and (max-width: 992px) {
-        border-radius: 10px;
-      }
-      @media screen and (max-width: 500px) {
-        min-height: auto;
-        height: 400px;
+        align-self: center;
+        width: 50%;
+        margin-bottom: 20px;
       }
     }
     
@@ -37,27 +42,32 @@
       width: 60%;
       font-size: 1.3rem;
       @media screen and (max-width: 1366px) {
-        font-size: .9rem;
+        font-size: 1.2rem;
       }
       @media screen and (max-width: 992px) {
-        font-size: .8rem;
+        text-align: center;
+        font-size: 1.2rem;
         border: none;
+        width: 100%;
+      }
+      @media screen and (max-width: 768px) {
+        font-size: 1.1rem;
+        border: none;
+        width: 100%;
       }
     }
 
     @media screen and (max-width: 992px) {
       gap: 20px;
+      flex-direction: column-reverse;
     }
   }
-  @media screen and (max-width: 1366px) {
-    padding: 50px;
-    gap: 10px;
-  }
+
   @media screen and (max-width: 992px) {
     padding: 30px;
-    flex-direction: column;
+    gap: 20px;
   }
   @media screen and (max-width: 768px) {
-    padding: 10px;
+    padding: 20px;
   }
 }
