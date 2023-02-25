@@ -1,13 +1,9 @@
-.app__flexCenter, .app__navbarCenter {
+.app__flexCenter, .app__flexColumn {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.app__background{
-  background-color: var(--dark-color);
-}
-
-.app__navbarCenter{
+.app__flexColumn{
   flex-direction: column;
 }

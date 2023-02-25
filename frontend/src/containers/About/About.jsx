@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./About.scss";
-
 import { Container } from "react-bootstrap";
-import { Link } from "react-router-dom";
-
 import { urlFor, client } from "../../client";
 
 const About = () => {

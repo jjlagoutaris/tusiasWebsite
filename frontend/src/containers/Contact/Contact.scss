@@ -1,0 +1,50 @@
+#app__contact-container{
+  max-width: var(--container-width);
+  // margin: 30px 0;
+  min-height: 90vh;
+  justify-content: center;
+  // @media screen and (max-width: 992px) {
+  //   display: grid;
+  // }
+}
+
+.contact-header{
+  font-size: 4rem;
+  font-weight: bold;
+  @media screen and (max-width: 992px) {
+    margin: 30px 0;
+    font-size: 3rem;
+  }
+}
+
+.contact-section{
+  // border: 1px solid red;
+  width: 90%;
+  font-size: 1.2rem;
+  align-items: stretch;
+  text-align: center;
+  .contact-section-card{
+    padding: 10px;
+    height: 200px;
+    width: 25%;
+    img{
+      height: 50px;
+      width: 50px;
+    }
+    .app__contact-card-text{
+      width: 100%;
+      font-weight: bold;
+    }
+    &:hover{
+      // cursor: pointer;
+      box-shadow: 0 0 5px black;
+      border-radius: 20px;
+    }
+    @media screen and (max-width: 992px) {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    flex-direction: column;
+  }
+}

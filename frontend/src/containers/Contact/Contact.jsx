@@ -1,10 +1,44 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
 import "./Contact.scss";
+import { Container } from "react-bootstrap";
+import { client, urlFor } from "../../client";
 
 const Contact = () => {
-  return (
-    <div>Contact</div>
-  )
-}
+  const [data, setData] = useState([]);
 
-export default Contact
+  useEffect(() => {
+    const query = '*[_type=="contact"]';
+
+    client.fetch(query).then((info) => setData(info));
+  }, []);
+
+  return (
+    <>
+      <Container
+        className="app__contact-container app__flexColumn"
+        id="app__contact-container"
+        fluid
+      >
+        <h2 className="contact-header ">Contact Me!</h2>
+        <div className="contact-section app__flexCenter">
+          {data.map((contact, index) => (
+            <div
+              className="contact-section-card app__flexColumn"
+              key={contact.title + index}
+            >
+              <img src={urlFor(contact.image)} alt={contact.title} />
+              {/* <h2 className="app__contact-card-title" style={{ marginTop: 20 }}>
+                {contact.title}:
+              </h2> */}
+              <p className="app__contact-card-text" style={{ marginTop: 10 }}>
+                {contact.information}
+              </p>
+            </div>
+          ))}
+        </div>
+      </Container>
+    </>
+  );
+};
+
+export default Contact;
