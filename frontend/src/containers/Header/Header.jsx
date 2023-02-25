@@ -42,7 +42,7 @@ const Header = () => {
             </div>
           </div>
 
-          <Link to="/Contact">
+          <Link to="/tusiasWebsite/Contact">
             <Button variant="info" size="lg" className="app__header-button">
               {thing.button}
             </Button>
