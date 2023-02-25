@@ -22,6 +22,7 @@ const About = () => {
           className="app__about-container app__flexCenter"
           id="app__about-container"
           key={index}
+          fluid
         >
           <div className="top">
             <h1>{aboutMe.header}</h1>
