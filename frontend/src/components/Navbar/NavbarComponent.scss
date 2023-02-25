@@ -2,37 +2,43 @@
   width: var(--container-width);
   padding: 0px;
   margin: 0px;
-  @media screen and (max-width: 600px){
-    padding: 20px;
-    img{
-      visibility: hidden;
-      background-color: pink;
-    }
-    .app__navbar-socials{
-      visibility: hidden;
-      position: relative;
-      &:after{
-        position: absolute;
-        visibility: visible;
-        content: 'Moments';
-        font-size: 3rem;
-        color: black;
-      }
+  .app__navbar-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 3rem;
+    padding-left: 30px;
+    @media screen and (max-width: 600px){
+      padding-left: 10px;
+      font-size: 1.5rem;
     }
   }
-}
-
-.app__navbar-socials{
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 10px;
-
-  Button{
-    border-radius: 50%;
-    &:hover{
-      background-color: gainsboro;
+  .app__navbar-col2{
+    .app__navbar-socials{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 10px;
+    
+      Button{
+        border-radius: 50%;
+        &:hover{
+          background-color: gainsboro;
+        }
+      }
     }
+    @media screen and (max-width: 992px) {
+      flex-direction: row-reverse;
+      justify-content: flex-start;
+      gap: 10px;
+      padding: 10px;
+    }
+    @media screen and (max-width: 600px){
+      gap: 5px;
+    }
+  }
+  @media screen and (max-width: 1120px) {
+    width: 100vw;
   }
 }
 
@@ -41,34 +47,6 @@ div > a{
   text-decoration: none;
   color: black;
   font-weight: bold;
-}
-
-.app__navbar-logo {
-  display: flex;
-  justify-content: flex-start;
-  // justify-content: center;
-  align-items: center;
-  font-size: 3rem;
-  padding-left: 30px;
-  img {
-    width: 240px;
-    height: 80px;
-
-    @media screen and (min-width: 2000px) {
-      width: 400px;
-      height: 200px;
-    }
-
-    @media screen and (max-width: 600px){
-      width: 120px;
-      height: 40px;
-    }
-
-    @media screen and (max-width: 400px){
-      width: 60px;
-      height: 20px;
-    }
-  }
 }
 
 .navbar-right{

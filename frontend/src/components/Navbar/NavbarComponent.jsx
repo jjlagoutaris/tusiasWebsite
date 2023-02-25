@@ -41,7 +41,7 @@ const NavbarComponent = () => {
             </Navbar.Brand>
           </Col>
 
-          <Col className="app__flexCenter">
+          <Col className="app__flexCenter app__navbar-col2">
             <div>
               <Navbar.Toggle
                 aria-controls={`offcanvasNavbar-expand-lg`}
