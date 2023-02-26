@@ -7,7 +7,7 @@ const Contact = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    const query = '*[_type=="contact"]';
+    const query = '*[_type=="contact"] | order(information)';
 
     client.fetch(query).then((info) => setData(info));
   }, []);
@@ -19,23 +19,22 @@ const Contact = () => {
         id="app__contact-container"
         fluid
       >
-        <h2 className="contact-header ">Contact Me!</h2>
+        <h2 className="contact-header ">Contact Me 👋</h2>
+        
         <div className="contact-section app__flexCenter">
           {data.map((contact, index) => (
             <div
               className="contact-section-card app__flexColumn"
-              key={contact.title + index}
+              key={index}
             >
               <img src={urlFor(contact.image)} alt={contact.title} />
-              {/* <h2 className="app__contact-card-title" style={{ marginTop: 20 }}>
-                {contact.title}:
-              </h2> */}
               <p className="app__contact-card-text" style={{ marginTop: 10 }}>
                 {contact.information}
               </p>
             </div>
           ))}
         </div>
+
       </Container>
     </>
   );
