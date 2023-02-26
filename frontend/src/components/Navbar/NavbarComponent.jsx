@@ -12,7 +12,7 @@ import {
   Offcanvas,
 } from "react-bootstrap";
 
-import { FaLinkedin, FaInstagram, FaDiscord } from "react-icons/fa";
+import { FaInstagram, FaDiscord, FaEnvelope } from "react-icons/fa";
 
 const NavbarComponent = () => {
   return (
@@ -28,13 +28,6 @@ const NavbarComponent = () => {
 
           <Col>
             <Navbar.Brand href="/tusiasWebsite/" className="app__navbar-logo">
-              {/* <img
-                alt="moments logo"
-                src={images.logo}
-                width="80"
-                height="80"
-                className="d-inline-block"
-              /> */}
               Moments
             </Navbar.Brand>
           </Col>
@@ -71,21 +64,19 @@ const NavbarComponent = () => {
 
             <div className="app__navbar-socials">
               <a
-                href="https://github.com/jjlagoutaris"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Button variant="light">
-                  <FaLinkedin />
-                </Button>
-              </a>
-              <a
-                href="https://github.com/jjlagoutaris"
+                href="https://www.instagram.com/_vienaragis_/"
                 target="_blank"
                 rel="noreferrer"
               >
                 <Button variant="light">
                   <FaInstagram />
+                </Button>
+              </a>
+              <a
+                href="mailto:marta.wokini2@gmail.com"
+              >
+                <Button variant="light">
+                  <FaEnvelope/>
                 </Button>
               </a>
               <a
