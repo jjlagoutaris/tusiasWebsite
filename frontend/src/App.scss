@@ -7,3 +7,49 @@
 .app__flexColumn{
   flex-direction: column;
 }
+
+.app__section-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  img{
+    max-height: 500px;
+    @media screen and (max-width: 992px) {
+      max-height: 300px;
+    }
+  }
+  .row{
+    max-width: var(--container-width);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 992px) {
+      flex-direction: column;
+      height: 1000px;
+    }
+  }
+  .app__section-picture-col{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .app__section-info{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    h2{
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    p{
+      font-size: 1.5rem;
+    }
+    .app__section-info-button{
+      background-color: white;
+      border-radius: 0;
+      border-color: black;
+      font-size: 1.5rem;
+    }
+  }
+}
