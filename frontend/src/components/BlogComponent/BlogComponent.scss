@@ -1,0 +1,9 @@
+#app__blog-section-container{
+  background-color: var(--yellow);
+  .row{
+    flex-direction: row-reverse;
+    .app__section-picture-col{
+      justify-content: flex-start;
+    }
+  }
+}

@@ -1,11 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./Header.scss";
-
 import { Button, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
 import { client } from "../../client";
-
 import { images } from "../../constants";
 
 const Header = () => {
@@ -47,6 +44,7 @@ const Header = () => {
               {thing.button}
             </Button>
           </Link>
+          
         </Container>
       ))}
     </>
