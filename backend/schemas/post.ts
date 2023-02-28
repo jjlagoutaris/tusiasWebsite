@@ -20,6 +20,18 @@ export default defineType({
       },
     }),
     defineField({
+      name: 'description',
+      title: 'Description',
+      description: 'A brief description of the article for readers to preview it.',
+      type: 'string',
+    }),
+    defineField({
+      name: 'excerpt',
+      title: 'Excerpt',
+      description: 'A part of the article that helps it show up in online searches.',
+      type: 'string',
+    }),
+    defineField({
       name: 'author',
       title: 'Author',
       type: 'reference',

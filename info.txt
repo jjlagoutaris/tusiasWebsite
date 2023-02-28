@@ -3,3 +3,14 @@ Name: Marta Leszczyńska
 IG: https://www.instagram.com/_vienaragis_/
 
 Email: marta.wokini2@gmail.com
+
+Travel Advisement
+
+ToDo:
+1. Implement responsiveness for section components 
+2. Add blog page
+3. Add paragraphs for other pages
+4. Pick new fonts
+5. Publish site
+6. Host Sanity Studio
+7. Get 'Tusia's feedback, and have her integrate her Discord, make tweaks, add input to design decisions, etc...
