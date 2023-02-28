@@ -5,6 +5,7 @@ import { Button, Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 import { client } from "../../client";
+import { PortableText } from '@portabletext/react';
 
 const Services = () => {
 
@@ -41,16 +42,14 @@ const Services = () => {
                 <h3 className='app__services-card-header' style={{ marginTop: 20 }}>
                   {service.service}
                 </h3>
-                <p className="app__services-card-text" style={{ marginTop: 10 }}>
-                  {service.description}
-                </p>
+                <PortableText value={service.body} className="app__service-body" />
               </div>
             ))}
           </div>
 
           <div className="services-extra-services app__flexColumn">
             <p className="services-extra-services-description">
-              For custom service requests and price inquiries, please contact me: 
+              For more information, custom service requests, and/or price inquiries, please contact me: 
             </p>
             <Link to="/tusiasWebsite/Contact">
               <Button size="lg" id="app__services-button">

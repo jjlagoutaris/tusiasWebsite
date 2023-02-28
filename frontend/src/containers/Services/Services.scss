@@ -25,7 +25,7 @@
 .services-section{
   gap: 30px;
   flex-flow: row wrap;
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 992px) {
     flex-direction: column;
   }
 }
@@ -35,10 +35,10 @@
   background-color: var(--yellow);
   padding: 20px;
   width: 40%;
-  height: 300px;
+  height: 500px;
   font-size: 1.2rem;
   border-radius: 10px;
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 992px) {
     width: 70%;
   }
   @media screen and (max-width: 400px) {

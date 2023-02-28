@@ -4,6 +4,7 @@ import { Button, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { client } from "../../client";
 import { images } from "../../constants";
+import { PortableText } from "@portabletext/react";
 
 const Header = () => {
   const [things, setThings] = useState([]);
@@ -26,7 +27,7 @@ const Header = () => {
             <div className="left">
               <h2 className="app__header-moments-headline">{thing.header}</h2>
               <p className="app__header-moments-info">
-                {thing.headerDescription}
+                <PortableText value={thing.body} className="app__header-body" />
               </p>
             </div>
 
