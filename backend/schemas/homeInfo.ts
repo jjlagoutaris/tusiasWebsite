@@ -11,19 +11,9 @@ export default defineType({
       type: 'string',
     }),
     defineField({
-      name: 'headerDescription',
-      title: 'Header Description',
-      type: 'string',
-    }),
-    defineField({
-      name: 'aboutMeHeader',
-      title: 'About Me Header',
-      type: 'string',
-    }),
-    defineField({
-      name: 'aboutMeDesc',
-      title: 'About Me Description',
-      type: 'string',
+      name: 'body',
+      title: 'Body',
+      type: 'blockContent',
     }),
     defineField({
       name: 'image',

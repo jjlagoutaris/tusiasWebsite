@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./About.scss";
 import { Container } from "react-bootstrap";
 import { urlFor, client } from "../../client";
+import { PortableText } from "@portabletext/react";
 
 const About = () => {
   const [data, setData] = useState([]);
@@ -27,7 +28,7 @@ const About = () => {
 
           <div className="bottom app__flexCenter">
             <p className="app__about-bio">
-              {aboutMe.bio}
+            <PortableText value={aboutMe.body} className="app__about-body" />
             </p>
             <img src={urlFor(aboutMe.image)} alt="Marta Leszczyńska" className="app__about-picture" />
           </div>

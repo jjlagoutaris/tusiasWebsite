@@ -11,6 +11,7 @@ const Blog = () => {
     const query = `*[_type=="post"] {
         title,
         slug,
+        publishedAt,
         description,
         mainImage {
           asset -> {
@@ -19,7 +20,7 @@ const Blog = () => {
           },
           alt
         }
-    }`;
+    } | order(publishedAt desc)`;
 
     client.fetch(query).then((info) => setPosts(info));
   }, []);
@@ -42,12 +43,12 @@ const Blog = () => {
                 <Card border="light" bg="light" className="app__blog-post app__flexColumn">
                   <Card.Img  variant="top"  src={urlFor(post.mainImage)} alt={post.title} />
                   <Card.Body>
-                    <Link to={`/blog/${post.slug.current}`}>
+                    <Link to={`/TusiasWebsite/blog/${post.slug.current}`}>
                       <Card.Title className="app__blog-card-title">{post.title}</Card.Title>
                     </Link>
                     <Card.Text>{post.description}</Card.Text>
                   </Card.Body>
-                  <Link to={`/blog/${post.slug.current}`}>
+                  <Link to={`/TusiasWebsite/blog/${post.slug.current}`}>
                     <Button variant="primary" className="app__button">
                       Read More
                     </Button>
