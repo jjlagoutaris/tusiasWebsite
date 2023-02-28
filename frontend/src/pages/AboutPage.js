@@ -6,7 +6,7 @@ const AboutPage = () => {
   return (
     <>
       <About />
-      <BlogComponent />
+      <BlogComponent direction="regular" />
       <ServicesComponent />
     </>
   )

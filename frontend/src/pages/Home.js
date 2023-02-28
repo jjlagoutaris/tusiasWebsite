@@ -7,7 +7,7 @@ const Home = () => {
     <>
       <Header />
       <HelloComponent />
-      <BlogComponent />
+      <BlogComponent direction="reverse"/>
       {/* <ServicesComponent /> */}
     </>
   )

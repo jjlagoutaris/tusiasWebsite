@@ -1,3 +1,9 @@
 #app__services-section-container{
-  background-color: var(--yellow);
+  background-color: var(--pink);
+  .row{
+    flex-direction: row-reverse;
+    .app__section-picture-col{
+      justify-content: flex-start;
+    }
+  }
 }

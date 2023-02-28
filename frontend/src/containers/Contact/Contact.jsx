@@ -19,7 +19,7 @@ const Contact = () => {
         id="app__contact-container"
         fluid
       >
-        <h2 className="contact-header ">Contact Me 👋</h2>
+        <h2 className="contact-header app__header-font-variant">Contact Me 👋</h2>
         
         <div className="contact-section app__flexCenter">
           {data.map((contact, index) => (
