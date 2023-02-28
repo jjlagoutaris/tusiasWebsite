@@ -33,7 +33,7 @@ const Blog = () => {
         fluid
       >
         <>
-          <h2 className="app__blog-header">
+          <h2 className="app__blog-header app__header-font-variant">
             Moments
           </h2>
           
@@ -44,12 +44,12 @@ const Blog = () => {
                   <Card.Img  variant="top"  src={urlFor(post.mainImage)} alt={post.title} />
                   <Card.Body>
                     <Link to={`/TusiasWebsite/blog/${post.slug.current}`}>
-                      <Card.Title className="app__blog-card-title">{post.title}</Card.Title>
+                      <Card.Title className="app__blog-card-title app__header-font-small">{post.title}</Card.Title>
                     </Link>
-                    <Card.Text>{post.description}</Card.Text>
+                    <Card.Text className="app__paragraph-text-variant">{post.description}</Card.Text>
                   </Card.Body>
                   <Link to={`/TusiasWebsite/blog/${post.slug.current}`}>
-                    <Button variant="primary" className="app__button">
+                    <Button variant="primary" className="app__button app__paragraph-text">
                       Read More
                     </Button>
                   </Link>

@@ -27,7 +27,7 @@ const NavbarComponent = () => {
         <Container fluid>
 
           <Col>
-            <Navbar.Brand href="/tusiasWebsite/" className="app__navbar-logo">
+            <Navbar.Brand href="/tusiasWebsite/" className="app__navbar-logo app__header-font-variant">
               Moments
             </Navbar.Brand>
           </Col>
@@ -50,7 +50,7 @@ const NavbarComponent = () => {
                 </Offcanvas.Header>
                 <Offcanvas.Body>
                   <Nav className="justify-content-end flex-grow-1 pe-3">
-                    <Stack gap="3" direction="horizontal">
+                    <Stack gap="3" direction="horizontal" className="app__paragraph-text">
                       <Link to={"/tusiasWebsite/"}>Home</Link>
                       <Link to={"/tusiasWebsite/About"}>About</Link>
                       <Link to={"/tusiasWebsite/Blog"}>Blog</Link>

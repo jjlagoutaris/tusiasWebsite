@@ -19,16 +19,14 @@ const Header = () => {
     <>
       {things.map((thing, index) => (
         <Container
-          className="app__header-container app__flexCenter"
+          className="app__flexCenter"
           id="app__header-container"
           key={index}
         >
           <div className="app__header-moments-container app__flexCenter">
-            <div className="left">
-              <h2 className="app__header-moments-headline">{thing.header}</h2>
-              <p className="app__header-moments-info">
-                <PortableText value={thing.body} className="app__header-body" />
-              </p>
+            <div className="left app__paragraph-text-variant">
+              <h2 className="app__header-moments-headline app__header-font-variant">{thing.header}</h2>
+              <PortableText value={thing.body}/>
             </div>
 
             <div className="right app__flexCenter">
@@ -41,7 +39,7 @@ const Header = () => {
           </div>
 
           <Link to="/tusiasWebsite/Contact">
-            <Button variant="info" size="lg" className="app__header-button">
+            <Button variant="info" size="lg" className="app__header-button app__paragraph-text">
               {thing.button}
             </Button>
           </Link>

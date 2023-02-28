@@ -26,18 +26,6 @@
   .bottom{
     width: 100%;
     gap: 50px;
-    .app__about-picture{
-      align-self: flex-start;
-      width: 40%;
-      // border-radius: 10px;
-
-      @media screen and (max-width: 992px) {
-        align-self: center;
-        width: 50%;
-        margin-bottom: 20px;
-      }
-    }
-    
     .app__about-bio{
       width: 60%;
       font-size: 1.3rem;
@@ -54,6 +42,17 @@
         font-size: 1.1rem;
         border: none;
         width: 100%;
+      }
+    }
+    .app__about-picture{
+      align-self: flex-start;
+      width: 40%;
+      // border-radius: 10px;
+
+      @media screen and (max-width: 992px) {
+        align-self: center;
+        width: 50%;
+        margin-bottom: 20px;
       }
     }
 

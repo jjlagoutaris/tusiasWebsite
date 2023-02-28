@@ -33,7 +33,7 @@
 .services-section-card{
   text-align: center;
   background-color: var(--yellow);
-  padding: 20px;
+  padding: 10px;
   width: 40%;
   height: 500px;
   font-size: 1.2rem;
@@ -81,5 +81,9 @@
 #app__services-button{
   background-color: var(--pink);
   color: black;
-  border-color: var(--pink);
+  border-color: black;
+  &:hover{
+    background-color: var(--yellow);
+    color: black;
+  }
 }

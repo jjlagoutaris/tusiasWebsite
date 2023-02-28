@@ -32,20 +32,20 @@ const BlogPost = () => {
     <>
       { isLoading ? ( <h1>Loading...</h1> ) : (
         <Container
-          className="app__blogpost-container app__flexColumn"
+          className="app__blogpost-container app__flexColumn app__header-font app__paragraph-text"
           id="app__blogpost-container"
           fluid
         >
-          <h2 className="app__blogpost-header ">{post.title}</h2>
+          <h2 className="app__blogpost-header app__header-font">{post.title}</h2>
           {
             post.mainImage && post.mainImage.asset ? (
               <img src={urlFor(post.mainImage)} alt={post.title} title={post.title} className= "app__blogpost-main-picture" />
             ) : ''
           }
-          <PortableText value={post.body} className="app__blogpost-body" />
+          <PortableText value={post.body} />
           {/* {console.log()} */}
           <Link to={`/TusiasWebsite/blog/`}>
-            <Button variant="primary" className="app__button">
+            <Button variant="primary" className="app__button app__paragraph-text">
               More Articles
             </Button>
           </Link>

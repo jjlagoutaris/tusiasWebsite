@@ -23,13 +23,13 @@ const About = () => {
           fluid
         >
           <div className="top">
-            <h1>{aboutMe.header}</h1>
+            <h1 className="app__header-font-variant">{aboutMe.header}</h1>
           </div>
 
           <div className="bottom app__flexCenter">
-            <p className="app__about-bio">
-            <PortableText value={aboutMe.body} className="app__about-body" />
-            </p>
+            <div className="app__about-bio app__paragraph-text">
+              <PortableText value={aboutMe.body} className="app__about-body" />
+            </div>
             <img src={urlFor(aboutMe.image)} alt="Marta Leszczyńska" className="app__about-picture" />
           </div>
 
