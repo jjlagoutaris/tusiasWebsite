@@ -10,7 +10,7 @@ import {
   Button,
 } from "react-bootstrap";
 
-const BlogComponent = (direction) => {
+const BlogComponent = (props) => {
 
   const [data, setData] = useState([]);
 
@@ -22,7 +22,7 @@ const BlogComponent = (direction) => {
 
   return (
     <>
-      <Container className="app__section-container" id={`app__blog-section-container-${direction}`} fluid>
+      <Container className="app__section-container" id={`app__blog-section-container-${props.direction}`} fluid>
         {data.map((blog, index) => (
           <Row key={index} className="section-row">
             <Col className="app__section-picture-col">
