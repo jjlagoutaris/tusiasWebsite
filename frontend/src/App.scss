@@ -50,6 +50,22 @@
       border-radius: 0;
       border-color: black;
       font-size: 1.5rem;
+      &:hover{
+        background-color: black;
+        color: var(--pink);
+        border-color: white;
+      }
     }
+  }
+}
+
+.app__button{
+  background-color: var(--yellow);
+  color: black;
+  border-color: black;
+  &:hover{
+    background-color: var(--pink);
+    border-color: black;
+    color: black;
   }
 }

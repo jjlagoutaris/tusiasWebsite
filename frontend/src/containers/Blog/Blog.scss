@@ -1,3 +1,26 @@
 #app__blog-container{
   max-width: var(--container-width);
 }
+
+.app__blog-header{
+  font-size: 3rem;
+  margin: 30px 0;
+}
+
+.app__blog-container{
+  padding: 20px 0;
+}
+
+.app__blog-post{
+  img{
+    height: 300px;
+    max-width: 90%;
+  }
+  padding-bottom: 20px;
+}
+
+.app__blog-posts{
+  @media screen and (max-width: 768px) {
+    gap: 50px;
+  }
+}

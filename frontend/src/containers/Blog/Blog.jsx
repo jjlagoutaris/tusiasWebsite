@@ -1,25 +1,62 @@
 import React, { useEffect, useState } from "react";
 import "./Blog.scss";
-import { Container } from "react-bootstrap";
+import { Container, Button, Card, Row, Col } from "react-bootstrap";
 import { client, urlFor } from "../../client";
+import { Link } from "react-router-dom";
 
 const Blog = () => {
-  const [data, setData] = useState([]);
+  const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    const query = '*[_type=="blog"]';
+    const query = `*[_type=="post"] {
+        title,
+        slug,
+        description,
+        mainImage {
+          asset -> {
+            _id,
+            url
+          },
+          alt
+        }
+    }`;
 
-    client.fetch(query).then((info) => setData(info));
+    client.fetch(query).then((info) => setPosts(info));
   }, []);
 
   return (
     <>
       <Container
-        className="app__blog-container"
+        className="app__blog-container app__flexColumn"
         id="app__blog-container"
         fluid
       >
-        Blogger
+        <>
+          <h2 className="app__blog-header">
+            Moments
+          </h2>
+          
+          <Row xs={1} md={2} lg={3} className="app__blog-posts">
+            {posts.map((post) => (
+              <Col key={post.slug.current}>
+                <Card border="light" bg="light" className="app__blog-post app__flexColumn">
+                  <Card.Img  variant="top"  src={urlFor(post.mainImage)} alt={post.title} />
+                  <Card.Body>
+                    <Link to={`/blog/${post.slug.current}`}>
+                      <Card.Title className="app__blog-card-title">{post.title}</Card.Title>
+                    </Link>
+                    <Card.Text>{post.description}</Card.Text>
+                  </Card.Body>
+                  <Link to={`/blog/${post.slug.current}`}>
+                    <Button variant="primary" className="app__button">
+                      Read More
+                    </Button>
+                  </Link>
+                </Card>
+              </Col>
+            ))}
+          </Row>
+        </>
       </Container>
     </>
   );

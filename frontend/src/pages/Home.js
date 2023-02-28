@@ -8,7 +8,7 @@ const Home = () => {
       <Header />
       <HelloComponent />
       <BlogComponent />
-      <ServicesComponent />
+      {/* <ServicesComponent /> */}
     </>
   )
 }
