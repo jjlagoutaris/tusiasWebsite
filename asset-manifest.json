@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/tusiasWebsite/static/css/main.1da8d9fc.css",
-    "main.js": "/tusiasWebsite/static/js/main.d13bfa87.js",
+    "main.js": "/tusiasWebsite/static/js/main.bb08b90e.js",
     "static/media/MartaHeroShot1.jpg": "/tusiasWebsite/static/media/MartaHeroShot1.ac99647681eef1a759bf.jpg",
     "static/media/moments.png": "/tusiasWebsite/static/media/moments.c06a3b062c1806971db0.png",
     "static/media/cover.jpg": "/tusiasWebsite/static/media/cover.dbf8db9d777508b235bb.jpg",
     "static/media/logo.png": "/tusiasWebsite/static/media/logo.a49fbface4093d6bb1c9.png",
     "index.html": "/tusiasWebsite/index.html",
     "main.1da8d9fc.css.map": "/tusiasWebsite/static/css/main.1da8d9fc.css.map",
-    "main.d13bfa87.js.map": "/tusiasWebsite/static/js/main.d13bfa87.js.map"
+    "main.bb08b90e.js.map": "/tusiasWebsite/static/js/main.bb08b90e.js.map"
   },
   "entrypoints": [
     "static/css/main.1da8d9fc.css",
-    "static/js/main.d13bfa87.js"
+    "static/js/main.bb08b90e.js"
   ]
 }
