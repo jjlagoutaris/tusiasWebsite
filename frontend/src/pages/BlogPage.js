@@ -1,5 +1,5 @@
 import React from 'react'
-import { HelloComponent, ServicesComponent } from '../components'
+import { HelloComponent } from '../components'
 import { Blog } from '../containers'
 
 const BlogPage = () => {
