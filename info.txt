@@ -4,11 +4,17 @@ IG: https://www.instagram.com/_vienaragis_/
 
 Email: marta.wokini2@gmail.com
 
-Travel Advisement
-
 ToDo:
-1. Implement responsiveness for section components 
-4. Pick new fonts
-5. Publish site
-6. Host Sanity Studio
-7. Get 'Tusia's feedback, and have her integrate her Discord, make tweaks, add input to design decisions, etc...
+1. Fix refresh issue on live site
+  a) Turn into Gatsby site
+  b) Host on Netlify
+2. Implement responsiveness for section components 
+3. Fix Block Content images
+4. Add hover animation for blog posts
+5. Pick new fonts
+6. Get 'Tusia's feedback, and have her integrate her Discord, make tweaks, add input to design decisions, etc...
+
+Tusia's To Do List:
+1. Fill out content
+2. Set up Discord
+3. Provide Feedback
