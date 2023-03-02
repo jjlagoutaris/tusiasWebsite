@@ -38,7 +38,7 @@ const Header = () => {
             </div>
           </div>
 
-          <Link to="/tusiasWebsite/Contact">
+          <Link to="Contact">
             <Button variant="info" size="lg" className="app__header-button app__paragraph-text">
               {thing.button}
             </Button>

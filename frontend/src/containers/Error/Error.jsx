@@ -7,7 +7,7 @@ const Error = () => {
   return(
     <Container id="app__error-container" className="app__flexColumn">
       <h1 className="app__error-header">Error 404 - Page Not Found</h1>
-      <Link to="/TusiasWebsite/">
+      <Link to="/">
         <Button className="app__error-button">
           Return to Home
         </Button>

@@ -35,7 +35,7 @@ const BlogComponent = (props) => {
               <p className="app__section-info-description">
                 {blog.information}
               </p>
-              <Link to="/tusiasWebsite/Blog">
+              <Link to="/Blog">
                 <Button variant="info" size="lg" className="app__section-info-button">
                   {blog.button}
                 </Button>

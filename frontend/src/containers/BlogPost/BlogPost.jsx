@@ -44,7 +44,7 @@ const BlogPost = () => {
           }
           <PortableText value={post.body} />
           {/* {console.log()} */}
-          <Link to={`/TusiasWebsite/blog/`}>
+          <Link to={`/blog`}>
             <Button variant="primary" className="app__button app__paragraph-text">
               More Articles
             </Button>

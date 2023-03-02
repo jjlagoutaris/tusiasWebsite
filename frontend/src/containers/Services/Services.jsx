@@ -51,7 +51,7 @@ const Services = () => {
             <p className="services-extra-services-description app__paragraph-text-small">
               For more information, custom service requests, and/or price inquiries, please contact me: 
             </p>
-            <Link to="/tusiasWebsite/Contact">
+            <Link to="/Contact">
               <Button size="lg" id="app__services-button" className='app__paragraph-text'>
                 Contact Me
               </Button>

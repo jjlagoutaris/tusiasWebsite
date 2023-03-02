@@ -51,11 +51,11 @@ const NavbarComponent = () => {
                 <Offcanvas.Body>
                   <Nav className="justify-content-end flex-grow-1 pe-3">
                     <Stack gap="3" direction="horizontal" className="app__paragraph-text">
-                      <Link to={"/tusiasWebsite/"}>Home</Link>
-                      <Link to={"/tusiasWebsite/About"}>About</Link>
-                      <Link to={"/tusiasWebsite/Blog"}>Blog</Link>
-                      <Link to={"/tusiasWebsite/Services"}>Services</Link>
-                      <Link to={"/tusiasWebsite/Contact"}>Contact</Link>
+                      <Link to={"/"}>Home</Link>
+                      <Link to={"/About"}>About</Link>
+                      <Link to={"/Blog"}>Blog</Link>
+                      <Link to={"/Services"}>Services</Link>
+                      <Link to={"/Contact"}>Contact</Link>
                     </Stack>
                   </Nav>
                 </Offcanvas.Body>
