@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/marta-leszczynska.netlify.app/static/css/main.1da8d9fc.css",
+    "main.js": "/marta-leszczynska.netlify.app/static/js/main.2dc88073.js",
+    "static/media/MartaHeroShot1.jpg": "/marta-leszczynska.netlify.app/static/media/MartaHeroShot1.ac99647681eef1a759bf.jpg",
+    "static/media/moments.png": "/marta-leszczynska.netlify.app/static/media/moments.c06a3b062c1806971db0.png",
+    "static/media/cover.jpg": "/marta-leszczynska.netlify.app/static/media/cover.dbf8db9d777508b235bb.jpg",
+    "static/media/logo.png": "/marta-leszczynska.netlify.app/static/media/logo.a49fbface4093d6bb1c9.png",
+    "index.html": "/marta-leszczynska.netlify.app/index.html",
+    "main.1da8d9fc.css.map": "/marta-leszczynska.netlify.app/static/css/main.1da8d9fc.css.map",
+    "main.2dc88073.js.map": "/marta-leszczynska.netlify.app/static/js/main.2dc88073.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1da8d9fc.css",
+    "static/js/main.2dc88073.js"
+  ]
+}
