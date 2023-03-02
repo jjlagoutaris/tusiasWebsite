@@ -13,12 +13,12 @@ function App() {
       <div className="app__flexColumn">
         <NavbarComponent />
         <Routes>
-          <Route path="/tusiasWebsite/" element={<Home />} />
-          <Route path="/tusiasWebsite/Blog" element={<BlogPage />} />
-          <Route path="/tusiasWebsite/Blog/:slug" element={<BlogPostPage />} />
-          <Route path="/tusiasWebsite/Contact" element={<ContactPage />} />
-          <Route path="/tusiasWebsite/Services" element={<ServicesPage />} />
-          <Route path="/tusiasWebsite/About" element={<AboutPage />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/Blog" element={<BlogPage />} />
+          <Route path="/Blog/:slug" element={<BlogPostPage />} />
+          <Route path="/Contact" element={<ContactPage />} />
+          <Route path="/Services" element={<ServicesPage />} />
+          <Route path="/About" element={<AboutPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />

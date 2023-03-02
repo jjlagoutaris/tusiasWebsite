@@ -1,7 +1,7 @@
 {
   "name": "tusias-emporium",
   "version": "0.1.0",
-  "homepage": "https://curious-cactus-14fc18.netlify.app/",
+  "homepage": "marta-leszczynska.netlify.app",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",

@@ -43,12 +43,12 @@ const Blog = () => {
                 <Card border="light" bg="light" className="app__blog-post app__flexColumn">
                   <Card.Img  variant="top"  src={urlFor(post.mainImage)} alt={post.title} />
                   <Card.Body>
-                    <Link to={`/TusiasWebsite/blog/${post.slug.current}`}>
+                    <Link to={`/blog/${post.slug.current}`}>
                       <Card.Title className="app__blog-card-title app__header-font-small">{post.title}</Card.Title>
                     </Link>
                     <Card.Text className="app__paragraph-text-variant">{post.description}</Card.Text>
                   </Card.Body>
-                  <Link to={`/TusiasWebsite/blog/${post.slug.current}`}>
+                  <Link to={`/blog/${post.slug.current}`}>
                     <Button variant="primary" className="app__button app__paragraph-text">
                       Read More
                     </Button>

@@ -35,7 +35,7 @@ const HelloComponent = () => {
               <p className="app__section-info-description">
                 {hello.information}
               </p>
-              <Link to="/tusiasWebsite/About">
+              <Link to="/About">
                 <Button variant="info" size="lg" className="app__section-info-button">
                   {hello.button}
                 </Button>
