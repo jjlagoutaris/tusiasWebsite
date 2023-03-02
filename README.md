@@ -1,3 +1,3 @@
 # Tusias-Emporium
 
-Live: https://jjlagoutaris.github.io/tusiasWebsite/
+Live: https://marta-leszczynska.netlify.app/
