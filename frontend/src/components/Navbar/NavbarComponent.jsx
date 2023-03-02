@@ -27,7 +27,7 @@ const NavbarComponent = () => {
         <Container fluid>
 
           <Col>
-            <Navbar.Brand href="/tusiasWebsite/" className="app__navbar-logo app__header-font-variant">
+            <Navbar.Brand href="/" className="app__navbar-logo app__header-font-variant">
               Moments
             </Navbar.Brand>
           </Col>
