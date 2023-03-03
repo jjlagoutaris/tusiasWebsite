@@ -9,16 +9,10 @@
 }
 
 .app__section-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: 500px;
   img{
     max-height: 500px;
-    @media screen and (max-width: 992px) {
-      max-height: 300px;
-    }
   }
   .row{
     max-width: var(--container-width);
@@ -33,6 +27,10 @@
   .app__section-picture-col{
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    @media screen and (max-width: 992px) {
+      justify-content: center;
+    }
   }
   .app__section-info{
     display: flex;
@@ -45,17 +43,33 @@
     p{
       font-size: 1.5rem;
     }
-    .app__section-info-button{
+    a{
+      width: fit-content;
       background-color: white;
-      border-radius: 0;
-      border-color: black;
+      border: 1px solid black;
       font-size: 1.5rem;
+      font-weight: 400;
+      padding: 8px 16px;
       &:hover{
         background-color: black;
         color: var(--pink);
         border-color: white;
       }
     }
+    @media screen and (max-width: 992px) {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 80%;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    flex-direction: column;
+    height: 800px;
+  }
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    height: 1000px;
   }
 }
 

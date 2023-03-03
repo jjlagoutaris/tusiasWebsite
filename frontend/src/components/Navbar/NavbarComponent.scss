@@ -7,6 +7,8 @@
     justify-content: flex-start;
     align-items: center;
     font-size: 3rem;
+    width: fit-content;
+    padding-left: 10px;
     @media screen and (max-width: 600px){
       padding-left: 10px;
       font-size: 1.5rem;
