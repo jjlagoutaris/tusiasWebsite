@@ -7,7 +7,6 @@ import {
   Container,
   Row,
   Col,
-  Button,
 } from "react-bootstrap";
 
 const BlogComponent = (props) => {
@@ -22,7 +21,7 @@ const BlogComponent = (props) => {
 
   return (
     <>
-      <Container className="app__section-container" id={`app__blog-section-container-${props.direction}`} fluid>
+      <Container className="app__section-container app__flexCenter" id={`app__blog-section-container-${props.direction}`} fluid>
         {data.map((blog, index) => (
           <Row key={index} className="section-row">
             <Col className="app__section-picture-col">
@@ -35,10 +34,8 @@ const BlogComponent = (props) => {
               <p className="app__section-info-description">
                 {blog.information}
               </p>
-              <Link to="/Blog">
-                <Button variant="info" size="lg" className="app__section-info-button">
-                  {blog.button}
-                </Button>
+              <Link to="/Blog" className="app__section-info-button">
+                {blog.button}
               </Link>
             </Col>
           </Row>
