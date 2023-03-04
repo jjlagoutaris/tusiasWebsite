@@ -1,3 +1,3 @@
 # Tusias-Emporium
 
-Live: https://marta-leszczynska.netlify.app/
+Live: https://martasmoments.netlify.app/
