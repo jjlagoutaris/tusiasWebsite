@@ -48,7 +48,7 @@ div > a{
   text-decoration: none;
   color: black;
   font-weight: bold;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 600px) {
     font-size: 1rem;
   }
   @media screen and (max-width: 500px) {
@@ -58,4 +58,25 @@ div > a{
 
 .navbar-right{
   float: right;
+}
+
+#offcanvasNavbar-expand-lg{
+  @media screen and (max-width: 600px) {
+    width: 66%;
+  }
+}
+
+#offcanvas-links{
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    > a{
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.offcanvas-title.h5{
+  font-size: 2rem;
+  font-weight: bold;
 }
