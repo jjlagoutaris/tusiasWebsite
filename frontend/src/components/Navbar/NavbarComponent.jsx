@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./NavbarComponent.scss";
 import { Link } from "react-router-dom";
 
@@ -15,11 +15,6 @@ import {
 import { FaInstagram, FaDiscord, FaEnvelope } from "react-icons/fa";
 
 const NavbarComponent = () => {
-
-  const [ showOffCanvas, setShowOffCanvas ] = useState(false);
-  const toggleOffCanvas = () => {
-    setShowOffCanvas((show) => !showOffCanvas);
-  }
 
   return (
     <>
@@ -43,28 +38,25 @@ const NavbarComponent = () => {
               <Navbar.Toggle
                 aria-controls={`offcanvasNavbar-expand-lg`}
                 className="navbar-right"
-                onClick={toggleOffCanvas}
               />
               <Navbar.Offcanvas
                 id={`offcanvasNavbar-expand-lg`}
                 aria-labelledby={`offcanvasNavbarLabel-expand-lg`}
                 placement="end"
-                show={showOffCanvas}
-                onHide={toggleOffCanvas}
               >
                 <Offcanvas.Header closeButton>
-                  <Offcanvas.Title id={`offcanvasNavbarLabel-expand-lg`}>
+                  <Offcanvas.Title id={`offcanvasNavbarLabel-expand-lg`} className="h3">
                     Moments
                   </Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
                   <Nav className="justify-content-end flex-grow-1 pe-3">
-                    <Stack gap="3" direction="horizontal" className="app__paragraph-text">
-                      <Link to={"/"} onClick={toggleOffCanvas}>Home</Link>
-                      <Link to={"/About"} onClick={toggleOffCanvas}>About</Link>
-                      <Link to={"/Blog"} onClick={toggleOffCanvas}>Blog</Link>
-                      <Link to={"/Services"} onClick={toggleOffCanvas}>Services</Link>
-                      <Link to={"/Contact"} onClick={toggleOffCanvas}>Contact</Link>
+                    <Stack gap="3" direction="horizontal" className="app__paragraph-text" id="offcanvas-links">
+                      <Link to={"/"}>Home</Link>
+                      <Link to={"/About"}>About</Link>
+                      <Link to={"/Blog"}>Blog</Link>
+                      <Link to={"/Services"}>Services</Link>
+                      <Link to={"/Contact"}>Contact</Link>
                     </Stack>
                   </Nav>
                 </Offcanvas.Body>
