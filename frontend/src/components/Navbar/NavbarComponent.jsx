@@ -51,11 +51,11 @@ const NavbarComponent = () => {
                 <Offcanvas.Body>
                   <Nav className="justify-content-end flex-grow-1 pe-3">
                     <Stack gap="3" direction="horizontal" className="app__paragraph-text">
-                      <Link to={"/"}>Home</Link>
-                      <Link to={"/About"}>About</Link>
-                      <Link to={"/Blog"}>Blog</Link>
-                      <Link to={"/Services"}>Services</Link>
-                      <Link to={"/Contact"}>Contact</Link>
+                      <Link to={"/"} >Home</Link>
+                      <Link to={"/About"} >About</Link>
+                      <Link to={"/Blog"} >Blog</Link>
+                      <Link to={"/Services"} >Services</Link>
+                      <Link to={"/Contact"} >Contact</Link>
                     </Stack>
                   </Nav>
                 </Offcanvas.Body>
