@@ -5,8 +5,6 @@ IG: https://www.instagram.com/_vienaragis_/
 Email: marta.wokini2@gmail.com
 
 ToDo:
-1. Implement auto-close from offcanvas after clicking on something
-2. Fix content selection after clicking on link
 3. Fix Block Content images
 4. Add hover animation for blog posts
 6. Get 'Tusia's feedback, and have her integrate her Discord, make tweaks, add input to design decisions, etc...
