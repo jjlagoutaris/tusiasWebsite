@@ -5,7 +5,7 @@ import { urlFor } from "../../client";
 const SampleImageComponent = ({ value, isInline }) => {
   const { width, height } = getImageDimensions(value);
   return (
-  <div>
+  <div className="app__image-div app__flexColumn">
     <img
       src={
         urlFor()
@@ -23,8 +23,9 @@ const SampleImageComponent = ({ value, isInline }) => {
         // Avoid jumping around with aspect-ratio CSS property
         aspectRatio: width / height,
       }}
+      className="app__image"
     />
-    <caption style={{margin: 0, padding: 0, width: "100%", fontSize: ".8rem", textAlign: "center", display: "inline-block"}}>{value.caption} {value.attribution}</caption>
+    <p className="app__image-caption">{value.caption} {value.attribution}</p>
   </div>
   );
 };
