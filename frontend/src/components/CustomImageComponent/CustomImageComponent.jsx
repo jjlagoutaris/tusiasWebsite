@@ -5,6 +5,7 @@ import { urlFor } from "../../client";
 const SampleImageComponent = ({ value, isInline }) => {
   const { width, height } = getImageDimensions(value);
   return (
+  <div>
     <img
       src={
         urlFor()
@@ -14,16 +15,17 @@ const SampleImageComponent = ({ value, isInline }) => {
         .auto("format")
         .url()
       }
-      alt={value.alt || " "}
+      alt={value.caption || " "}
       loading="lazy"
       style={{
         // Display alongside text if image appears inside a block text span
         display: isInline ? "inline-block" : "block",
-
         // Avoid jumping around with aspect-ratio CSS property
         aspectRatio: width / height,
       }}
     />
+    <caption style={{margin: 0, padding: 0, width: "100%", fontSize: ".8rem", textAlign: "center", display: "inline-block"}}>{value.caption} {value.attribution}</caption>
+  </div>
   );
 };
 
