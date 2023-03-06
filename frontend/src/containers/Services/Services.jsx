@@ -10,25 +10,31 @@ import { PortableText } from '@portabletext/react';
 const Services = () => {
 
   const [services, setServices] = useState([]);
+  const [servicesInfo, setServicesInfo] = useState([]);
 
   useEffect(() => {
     const query = '*[_type=="services"]';
+    const query2 = '*[_type=="servicesInfo"]';
 
     client.fetch(query).then((info) => setServices(info));
+    client.fetch(query2).then((info) => setServicesInfo(info));
   }, []);
 
   return (
     <>
+    {servicesInfo.map((serviceInfo, index) => (
       <Container
         className="app__services-container app__flexColumn"
         id="app__services-container"
         fluid
+        key={index}
       >
-
         <div className="app__services-container-top app__flexColumn">
-          <h2 className="services-header app__header-font-variant">Services</h2>
+          <h2 className="services-header app__header-font-variant">
+            {serviceInfo.header}
+          </h2>
           <p className="services-description app__paragraph-text-variant">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Blandit aliquam etiam erat velit scelerisque in dictum non consectetur.
+            {serviceInfo.description}
           </p>
         </div>
 
@@ -49,11 +55,11 @@ const Services = () => {
 
           <div className="services-extra-services app__flexColumn">
             <p className="services-extra-services-description app__paragraph-text-small">
-              For more information, custom service requests, and/or price inquiries, please contact me: 
+            {serviceInfo.moreInfo}
             </p>
             <Link to="/Contact">
               <Button size="lg" id="app__services-button" className='app__paragraph-text'>
-                Contact Me
+                {serviceInfo.button}
               </Button>
             </Link>
           </div>
@@ -73,6 +79,7 @@ const Services = () => {
           </Row>
         </div>
       </Container>
+    ))}
     </>
   )
 }

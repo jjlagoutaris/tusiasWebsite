@@ -140,3 +140,35 @@ a{
 .app__paragraph-text-small{
   font-size: 1rem;
 }
+
+.app__image-caption{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: .8rem; 
+  font-weight: normal; 
+  text-align: left; 
+  display: block;
+  overflow-wrap: break-word;
+  @media screen and (max-width: 992px) {
+    width: 100%;
+    text-align: left;
+  }
+  @media screen and (max-width: 768px) {
+    width: 60%;
+    text-align: center;
+  }
+}
+
+.app__image{
+  max-width: 800px;
+  @media screen and (max-width: 992px) {
+    max-width: 600px;
+  }
+  @media screen and (max-width: 768px) {
+    max-width: 400px;
+  }
+  @media screen and (max-width: 600px) {
+    max-width: 300px;
+  }
+}
