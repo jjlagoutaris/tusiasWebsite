@@ -1,4 +1,5 @@
 import {defineField, defineType} from 'sanity'
+import { ImageIcon } from "@sanity/icons";
 
 export default defineType({
   name: 'post',
@@ -9,6 +10,7 @@ export default defineType({
       name: 'title',
       title: 'Title',
       type: 'string',
+      description: 'I love you, Tusia.'
     }),
     defineField({
       name: 'slug',
@@ -62,10 +64,24 @@ export default defineType({
       type: 'array',
       of: [
         {
-          type: 'block'
+          type: 'block',
         },
         {
           type: 'image',
+          icon: ImageIcon,
+          fields: [
+            {
+              name: 'caption',
+              type: 'string',
+              title: 'Caption',
+              description: 'This is your caption and what users with screen-readers will hear to describe the image (for blind users, for example)',
+            },
+            {
+              name: 'attribution',
+              type: 'string',
+              title: 'Photo credit',
+            },
+          ],
         },
       ]
     }),
