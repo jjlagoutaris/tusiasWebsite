@@ -4,6 +4,7 @@ import { Container, Button } from "react-bootstrap";
 import { client, urlFor } from "../../client";
 import { Link, useParams } from 'react-router-dom';
 import { PortableText } from '@portabletext/react';
+import { components } from "../../components";
 
 const BlogPost = () => {
   const [post, setPost] = useState([]);
@@ -42,8 +43,7 @@ const BlogPost = () => {
               <img src={urlFor(post.mainImage)} alt={post.title} title={post.title} className= "app__blogpost-main-picture" />
             ) : ''
           }
-          <PortableText value={post.body} />
-          {/* {console.log()} */}
+          <PortableText value={post.body} components={components} />
           <Link to={`/blog`}>
             <Button variant="primary" className="app__button app__paragraph-text">
               More Articles
