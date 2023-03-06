@@ -9,5 +9,7 @@ import aboutMe from './aboutMe'
 import helloSection from './helloSection'
 import blogSection from './blogSection'
 import servicesSection from './servicesSection'
+import servicesInfo from './servicesInfo'
+import blogPage from './blogPage'
 
-export const schemaTypes = [post, author, category, blockContent, contact, services, homeInfo, aboutMe, helloSection, blogSection, servicesSection]
+export const schemaTypes = [post, author, category, blockContent, services, helloSection, blogSection, servicesSection, aboutMe, contact, homeInfo, servicesInfo, blogPage]
