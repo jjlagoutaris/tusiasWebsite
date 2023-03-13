@@ -10,7 +10,7 @@ const Footer = () => {
         © Copyright Marta Leszczyńska. All Rights Reserved.
         </p>
         <p className="app__footer-bottom">
-          Website by <a href="https://jjlagoutaris.github.io/myWebsite/" target="_blank" rel="noreferrer" className='app__footer-name'>John Lagoutaris</a>
+          Website by <a href="https://johnlagoutaris.netlify.app/" target="_blank" rel="noreferrer" className='app__footer-name'>John Lagoutaris</a>
         </p>
       </Navbar>
     </>
