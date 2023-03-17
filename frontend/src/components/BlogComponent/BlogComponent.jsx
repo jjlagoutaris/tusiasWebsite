@@ -3,14 +3,9 @@ import "./BlogComponent.scss";
 import { Link } from "react-router-dom";
 import { urlFor, client } from "../../client";
 
-import {
-  Container,
-  Row,
-  Col,
-} from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 
 const BlogComponent = () => {
-
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -21,16 +16,22 @@ const BlogComponent = () => {
 
   return (
     <>
-      <Container className="app__section-container app__flexCenter" id={`app__blog-section-container`} fluid>
+      <Container
+        className="app__section-container app__flexCenter"
+        id={`app__blog-section-container`}
+        fluid
+      >
         {data.map((blog, index) => (
           <Row key={index} className="section-row">
             <Col className="app__section-picture-col">
-              <img src={urlFor(blog.image)} alt={blog.header} className="app__section-picture" />
+              <img
+                src={urlFor(blog.image)}
+                alt={blog.header}
+                className="app__section-picture"
+              />
             </Col>
             <Col className="app__section-info">
-              <h2 className="app__section-info-header">
-                {blog.header}
-              </h2>
+              <h2 className="app__section-info-header">{blog.header}</h2>
               <p className="app__section-info-description">
                 {blog.information}
               </p>
@@ -44,7 +45,5 @@ const BlogComponent = () => {
     </>
   );
 };
-
-
 
 export default BlogComponent;

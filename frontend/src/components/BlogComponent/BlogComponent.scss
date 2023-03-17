@@ -1,7 +1,6 @@
 #app__blog-section-container{
   background-color: var(--pink);
   .row{
-    flex-direction: row-reverse;
     .app__section-picture-col{
       justify-content: flex-start;
       @media screen and (max-width: 993px) {
