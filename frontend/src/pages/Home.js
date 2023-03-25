@@ -1,6 +1,6 @@
 import React from 'react';
 import { Header } from '../containers';
-import { HelloComponent, ServicesComponent } from '../components';
+import { HelloComponent } from '../components';
 
 const Home = () => {
   return (
@@ -8,7 +8,7 @@ const Home = () => {
       <Header />
       <HelloComponent />
       {/* <BlogComponent */}
-      <ServicesComponent />
+      {/* <ServicesComponent /> */}
     </>
   )
 }
